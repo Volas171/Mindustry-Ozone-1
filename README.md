@@ -8,8 +8,7 @@
 ![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%Fo7-Fire%2FMindustry-Ozone.svg?type=shield)
 
 # Note
-Android version is broken af\
-This Is volas schenanigans ver
+Android version is broken af and This Is volas schenanigans ver
 
 # Installation
 https://github.com/o7-Fire/Mindustry-Ozone/wiki
