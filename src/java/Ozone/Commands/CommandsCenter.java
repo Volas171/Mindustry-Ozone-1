@@ -690,7 +690,7 @@ public class CommandsCenter extends AbstractModule {
 		register("gc", new Command(CommandsCenter::garbageCollector, Icon.cancel), "Trigger Garbage Collector");
 		
 		//Payload for connect diagram
-		payloads.put("sorter-shuffle", new Payload(CommandsCenter::shuffleSorterPayload));
+		payloads.put("rotate-conveyor", new Payload(CommandsCenter::shuffleSorterPayload));
 		Log.infoTag("Ozone", "Commands Center Initialized");
 		Log.infoTag("Ozone", commandsList.size() + " commands loaded");
 		Log.infoTag("Ozone", payloads.size() + " payload loaded");
