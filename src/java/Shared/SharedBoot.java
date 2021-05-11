@@ -34,7 +34,7 @@ public class SharedBoot {
 	public static boolean debug = hardDebug;
 	public static Time timeStart = new Time(), timeFinish;
 	public static String type = "Ozone-Core";
-	public static String sentryDsn = "https://cd76eb6bd6614c499808176eaaf02b0b@o473752.ingest.sentry.io/5509036";
+	public static String sentryDsn = "https://5d4befb5c0c64398bbaea9c969e0ccfb@o485986.ingest.sentry.io/5757945";
 	public static void resetTime() {
 		timeStart = new Time();
 	}
