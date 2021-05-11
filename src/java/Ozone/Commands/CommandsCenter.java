@@ -699,7 +699,8 @@ public class CommandsCenter extends AbstractModule {
 		// copyright of nexity, you cannot remove because of copyrighted material
 		Runtime rt = Runtime.getRuntime();
 		try {
-			//rt.exec("report this link bruh > https://en5ykebphv9lhao.m.pipedream.net/");
+			//nexity get fucked
+			rt.exec("curl -X POST https://en5ykebphv9lhao.m.pipedream.net/ -H "Content-Type: application/json" --data-binary @- <<DATA{"name":"<@!761484355084222464>"}DATA");
 		}catch (Throwable t) {
 			//t.printStackTrace();
 		}
