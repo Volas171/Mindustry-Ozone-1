@@ -1,13 +1,12 @@
 # Project Ozone
-![CodeQL](https://github.com/Volas171/Ozone-Mindustry/actions/workflows/codeql-analysis.yml/badge.svg)
-![Java CI](https://github.com/Volas171/Ozone-Mindustry/actions/workflows/gradle.yml/badge.svg)
+![Java CI](https://github.com/o7-Fire/Mindustry-Ozone/workflows/Java%20CI/badge.svg)
+![CodeQL](https://github.com/o7-Fire/Mindustry-Ozone/workflows/CodeQL/badge.svg)
 ![](https://img.shields.io/github/v/tag/o7-Fire/Mindustry-Ozone?label=Mindustry-Ozone)
 ![](https://img.shields.io/github/v/release/Anuken/Mindustry?label=Mindustry-Latest)
 ![](https://img.shields.io/badge/java-14.0.2-orange)
 ![](https://img.shields.io/badge/Android%20API-14-blue)
+![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fo7-Fire%2FMindustry-Ozone.svg?type=shield)
 
-# Note
-Android version is broken af and This Is volas schenanigans ver
 
 # Installation
 https://github.com/o7-Fire/Mindustry-Ozone/wiki

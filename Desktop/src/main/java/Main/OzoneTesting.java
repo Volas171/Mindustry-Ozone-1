@@ -91,7 +91,7 @@ public class OzoneTesting {
 			Vars.init();
 		}catch (Throwable ignored) {}
 		Vars.dataDirectory = new Fi(FileUtility.getTempDir());
-		SharedBoot.type = "Ozone-Desktop";
+		
 	}
 	
 	public static void main(String[] args) {

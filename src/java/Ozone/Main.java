@@ -36,6 +36,8 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
+import static Ozone.Internal.InformationCenter.reflectJson;
+
 public class Main {
 	private static boolean init = false;
 	private static int iteration = 0;
@@ -51,28 +53,45 @@ public class Main {
 	}
 	
 	public static <T> Collection<Class<? extends T>> getExtendedClass(String packag, Class<T> type) {
-		if (SharedBoot.isCore()) return new ArrayList<>();
-		return Reflect.getExtendedClass(packag, type, Main.class.getClassLoader());
-	}
-	
-	public static <T> ArrayList<Class<? extends T>> getClass(Iterable<String> arg) {
-		ArrayList<Class<? extends T>> real = new ArrayList<>();
-		for (String s : arg) {
-			try {
-				Class<? extends T> c = (Class<? extends T>) Main.class.getClassLoader().loadClass(s);
-				if (!real.contains(c)) real.add(c);
-			}catch (Throwable ignored) {}
+		Collection<Class<? extends T>> raw = null;
+		
+		try {
+			if (SharedBoot.isCore()) {
+				String reflect = reflectJson();
+				raw = (Reflect.getExtendedClassFromJson(reflect, type));
+			}
+		}catch (Throwable t) {
+			WarningHandler.handleProgrammerFault(t);
 		}
-		return real;
+		if (raw == null) try {
+			//if (SharedBoot.hardDebug) throw new RuntimeException("eat pant");
+			if (InformationCenter.getReflection() != null) raw = InformationCenter.getReflection().getSubTypesOf(type);
+		}catch (Throwable e) {
+			WarningHandler.handleProgrammerFault(e);
+			
+		}
+		if (raw == null) try {
+			raw = Reflect.getExtendedClass(packag, type, Main.class.getClassLoader());
+		}catch (Throwable e) {
+			WarningHandler.handleProgrammerFault(e);
+		}
+		try {
+			ArrayList<Class<? extends T>> real = new ArrayList<>();
+			if (raw == null) return real;
+			for (Class<? extends T> c : raw) {
+				Class<? extends T> ce = (Class<? extends T>) Main.class.getClassLoader().loadClass(c.getName());
+				if (!real.contains(ce)) real.add(ce);
+			}
+			return real;
+		}catch (VirtualMachineError e) {
+			throw new RuntimeException("Eat shit", e);
+		}catch (Throwable t) {
+			throw new RuntimeException(t);
+		}
 	}
 	
 	public static Collection<Class<? extends ModuleInterfaced>> getModule() {
-		if (!SharedBoot.isCore()) return getExtendedClass(Main.class.getPackage().getName(), ModuleInterfaced.class);
-		try {
-			return getClass(InformationCenter.moduleList().values());
-		}catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		return getExtendedClass(Main.class.getPackage().getName(), ModuleInterfaced.class);
 	}
 	
 	public static void earlyInit() {

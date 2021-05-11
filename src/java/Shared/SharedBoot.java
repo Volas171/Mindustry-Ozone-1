@@ -14,6 +14,20 @@
  * limitations under the License.
  ******************************************************************************/
 
+/* o7 Inc 2021 Copyright
+
+  Licensed under the o7 Inc License, Version 1.0.1, ("the License");
+  You may use this file but only with the License. You may obtain a
+  copy of the License at
+  
+  https://github.com/o7-Fire/Mindustry-Ozone/Licenses
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the license for the specific language governing permissions and
+  limitations under the License.
+*/
 
 package Shared;
 
@@ -34,7 +48,7 @@ public class SharedBoot {
 	public static boolean debug = hardDebug;
 	public static Time timeStart = new Time(), timeFinish;
 	public static String type = "Ozone-Core";
-	public static String sentryDsn = "https://5d4befb5c0c64398bbaea9c969e0ccfb@o485986.ingest.sentry.io/5757945";
+	
 	public static void resetTime() {
 		timeStart = new Time();
 	}
@@ -79,7 +93,7 @@ public class SharedBoot {
 			System.out.println("Sentry: Debug");
 		}
 		Sentry.init(options -> {
-			options.setDsn(sentryDsn);
+			options.setDsn("https://cd76eb6bd6614c499808176eaaf02b0b@o473752.ingest.sentry.io/5509036");
 			options.setRelease(Version.core + ":" + Version.desktop);
 			options.setDebug(debug);
 			options.setTracesSampleRate(1.0);

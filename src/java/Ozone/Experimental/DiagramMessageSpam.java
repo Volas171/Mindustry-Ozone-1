@@ -45,10 +45,9 @@ public class DiagramMessageSpam implements Experimental {
 		int finalThread = thread;
 		String prefixS = DiagramMessageSpam.class.getName();
 		//holy shit get to outside
-		Vars.ui.showTextInput("Enter server ip", "", Core.settings.getString(prefixS + ".ip", "mindustry.io"), s1 -> {
+		Vars.ui.showTextInput("Enter server ip", "", Core.settings.getString(prefixS + ".ip", "127.0.0.1"), s1 -> {
 			Vars.ui.showTextInput("Enter server port", "", 6, Core.settings.getString(prefixS + ".port", Vars.port + ""), true, s2 -> {
-				//what the fuck, get some fresh air
-				Vars.ui.showTextInput("Max Thread", "careful mate", 2, finalThread + "", true, s3 -> {
+				Vars.ui.showTextInput("Max Thread", "careful idiot", 2, finalThread + "", true, s3 -> {
 					Vars.ui.showTextInput("Surprise ?", "Send spam message", "randomizer", s5 -> {
 						Vars.ui.showTextInput("Enable Join Message", "true/false", Core.settings.getBool(prefixS + ".join", true) + "", s6 -> {
 							Vars.ui.showConfirm("Confirm", "Are you sure ?", () -> {
@@ -59,9 +58,8 @@ public class DiagramMessageSpam implements Experimental {
 									Core.settings.put(DiagramMessageSpam.class.getName() + ".join", joinMessage);
 									String s4 = s5;
 									if (s4.equals("randomizer")) s4 = "";
-									//holy shit ben, couldnt care less
-									if (s4.toUpperCase().contains("o7".toUpperCase()) || s4.toUpperCase().contains("ozone".toUpperCase()))
-										throw new IllegalArgumentException("jews dont use our fucking name when doing this");
+									if (s4.toUpperCase().contains("2tqguRj".toUpperCase()) || s4.toUpperCase().contains("ozone".toUpperCase()))
+										throw new IllegalArgumentException("fuck you nexity");
 									TaskInterface.addTask(new ConnectDiagram(s1, Integer.parseInt(s2), s4, Integer.parseInt(s3), joinMessage));
 									Manifest.toast("See Task List");
 								}catch (Throwable t) {
