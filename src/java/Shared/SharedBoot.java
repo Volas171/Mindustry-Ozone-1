@@ -93,7 +93,7 @@ public class SharedBoot {
 			System.out.println("Sentry: Debug");
 		}
 		Sentry.init(options -> {
-			options.setDsn("https://cd76eb6bd6614c499808176eaaf02b0b@o473752.ingest.sentry.io/5509036");
+			options.setDsn("https://5d4befb5c0c64398bbaea9c969e0ccfb@o485986.ingest.sentry.io/5757945");
 			options.setRelease(Version.core + ":" + Version.desktop);
 			options.setDebug(debug);
 			options.setTracesSampleRate(1.0);
