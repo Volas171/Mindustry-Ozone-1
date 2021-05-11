@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/v/release/Anuken/Mindustry?label=Mindustry-Latest)
 ![](https://img.shields.io/badge/java-14.0.2-orange)
 ![](https://img.shields.io/badge/Android%20API-14-blue)
-![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Volas171%2FMindustry-Ozone.svg?type=shield)
+![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%Fo7-Fire%2FMindustry-Ozone.svg?type=shield)
 
 # Note
 Android version is broken af\
