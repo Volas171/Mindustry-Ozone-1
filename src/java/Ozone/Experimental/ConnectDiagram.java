@@ -120,7 +120,7 @@ public class ConnectDiagram extends AttackDiagram {
 				b.set(true);
 			});
 			while (!b.get()) {
-				try { Thread.sleep(100); }catch (Throwable ignored) { }
+				try { Thread.sleep(400); }catch (Throwable ignored) { }
 			}
 			p.dispose();
 		});
