@@ -69,7 +69,7 @@ public class Repo extends Atom.File.Repo implements ModuleInterfaced {
 		}catch (Throwable t) {
 			WarningHandler.handleMindustry(t);
 		}
-		addRepo(new URL("https://o7inc.ddns.net/ozone"));
+		addRepo(new URL("https://www.o7fire.tk/ozone"));
 		INSTANCE = this;
 	}
 	
