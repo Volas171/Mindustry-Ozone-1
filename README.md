@@ -9,7 +9,7 @@
 
 # Note
 Android version is broken af\
-Closed sourced 
+This Is volas schenanigans ver
 
 # Installation
 https://github.com/o7-Fire/Mindustry-Ozone/wiki
