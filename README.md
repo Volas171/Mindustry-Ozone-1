@@ -1,7 +1,7 @@
 # Project Ozone
 ![CodeQL](https://github.com/Volas171/Ozone-Mindustry/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Java CI](https://github.com/Volas171/Ozone-Mindustry/actions/workflows/gradle.yml/badge.svg)
-![](https://img.shields.io/github/v/tag/o7-Fire/Mindustry-Ozone?label=Mindustry-Ozone)
+![](https://img.shields.io/github/v/tag/Volas171/Ozone-Mindustry?label=Mindustry-Ozone)
 ![](https://img.shields.io/github/v/release/Anuken/Mindustry?label=Mindustry-Latest)
 ![](https://img.shields.io/badge/java-14.0.2-orange)
 ![](https://img.shields.io/badge/Android%20API-14-blue)
