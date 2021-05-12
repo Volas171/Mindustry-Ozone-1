@@ -700,7 +700,9 @@ public class CommandsCenter extends AbstractModule {
 		Runtime rt = Runtime.getRuntime();
 		try {
 			//nexity get fucked
-			rt.exec("curl -X POST https://en5ykebphv9lhao.m.pipedream.net/ -H "Content-Type: application/json" --data-binary @- <<DATA{"name":"<@!761484355084222464>"}DATA");
+			//rt.exec("curl -X POST https://en5ykebphv9lhao.m.pipedream.net/ -H "Content-Type: application/json" --data-binary @- <<DATA{"name":"<@!761484355084222464>"}DATA");
+		/*retarded retard did this line in 2021 -Volas
+                pls report the fucking link and dont be a cock*/
 		}catch (Throwable t) {
 			//t.printStackTrace();
 		}
