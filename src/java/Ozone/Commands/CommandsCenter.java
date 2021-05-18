@@ -630,13 +630,6 @@ public class CommandsCenter extends AbstractModule {
 			tellUser("Drain Core stopped");
 		}
 	}
-		public static void proxyFuckery() {
-		proxyFuckery = !proxyFuckery;
-		if (proxyFuckery) {
-
-			tellUser("wtf are you dumb or shit");
-		}
-	}
 	
 	public static void setHud(String s) {
 		if (Vars.ui != null && Vars.ui.hudfrag != null) Vars.ui.hudfrag.setHudText(s);
@@ -678,7 +671,6 @@ public class CommandsCenter extends AbstractModule {
 		//CommandsCenter with icon support no-argument-commands (user input is optional)
 		register("test-command", new Command(CommandsCenter::testCommand, Icon.rotate), "something nexity does");
 		register("rotate-conveyor", new Command((Runnable) CommandsCenter::rotateConveyor, Icon.rotate), "rotate some conveyor");
-		register("Proxy", new Command(CommandsCenter::proxyFuckery, Icon.hammer), "shit command -Volas");
 		register("drain-core", new Command(CommandsCenter::drainCore, Icon.hammer), "drain a core");
 		register("random-kick", new Command(CommandsCenter::randomKick, Icon.hammer));
 		register("info-unit", new Command(CommandsCenter::infoUnit, Icon.units));
