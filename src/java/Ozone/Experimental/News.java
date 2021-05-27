@@ -34,6 +34,6 @@ package Ozone.Experimental;
 public class News implements Experimental {
 	@Override
 	public void run() {
-	
+	Vars.ui.showException("bruh wtf go use glopion");
 	}
 }
