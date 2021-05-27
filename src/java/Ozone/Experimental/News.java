@@ -30,10 +30,11 @@
 */
 
 package Ozone.Experimental;
+import Shared.InfoBox;
 
 public class News implements Experimental {
 	@Override
 	public void run() {
-	
+	InfoBox.infoBox("news", "retard drops ozone support, migrate to glopion (more info o7fire.tk");
 	}
 }
